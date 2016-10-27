@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="emailApp">
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS Email App</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header__text">
+        <p>Angular Mail by <a href="http://www.thinkful.com/a/learn">Thinkful.com</a></p>
+      </div>
+    </header>
+
+    <main class="main" role="main">
+      <div ng-view class="flex"></div>
+    </main>
+
+    <!-- Vendor libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   
+   <script src="angular.min.js"></script>
+   <script src="angular-route.min.js"></script>
+   <script src="angular-sanitize.min.js"></script>
+    <!-- Application Files -->
+   <script src= "simpleEmailApp.js"></script> 
+   <script src="simpleInboxControl.js"></script>
+    <script src="simpleEmailControl.js"></script>
+    <script src="simpleEmailInboxFactory.js"></script>
+    <script src="simpleEmailFactory.js"></script>
+    <script src="simpleInboxDrctv.js"></script>
+    <script src="simpleEmailDrctv.js"></script>
+  </body>
+</html>
